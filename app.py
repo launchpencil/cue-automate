@@ -1,6 +1,7 @@
 import streamlit as st
 import xml.etree.ElementTree as et
 import pandas as pd
+import io
 
 st.title('QUE sheet maker')
 
@@ -13,10 +14,10 @@ if uploaded_file is not None:
 	st.info('file uploaded!')
 	tree = et.parse(uploaded_file).getroot()
 
-	tree[1][0][0][0]
+	tree[1][0][0][0][0]
 
     
-	for child in tree[1][0][0][0][0][0]:
+	for child in tree[1][0][0][0][0]:
 		time = child.attrib["offset"]
 		if time != "0s":
 			parts = child.attrib["offset"].split('/')
@@ -32,6 +33,18 @@ if uploaded_file is not None:
 		data_list.append({"分": time//60, "秒": time%60, "トラック名": status})
 
 df = pd.DataFrame(data_list)
-df2 = pd.DataFrame(data_list2)
 df
-df2
+
+
+output = io.BytesIO()
+with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
+    df.to_excel(writer, index=False, sheet_name='Updated Data')
+
+# ダウンロードするファイル名の設定
+download_file_name = "QUEシート貼り付け用データ.xlsx"
+st.download_button(
+    label="データをダウンロード",
+    data=output.getvalue(),
+    file_name=download_file_name,
+    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+)
