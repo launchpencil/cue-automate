@@ -3,7 +3,7 @@ import xml.etree.ElementTree as et
 import pandas as pd
 import io
 
-st.title('QUEシート作成補助アプリ')
+st.title('CUEシート作成補助アプリ')
 st.caption("動画の編集データを分析し、CUEシートに貼り付けることのできる形式に変換します。")
 
 
