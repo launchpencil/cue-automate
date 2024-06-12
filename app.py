@@ -32,13 +32,13 @@ if uploaded_file is not None:
 		data_list.append({"分": time//60, "秒": time%60, "トラック名": status})
 
 	df = pd.DataFrame(data_list)
-	st.data_editor(df)
+	edited_data = st.data_editor(df)
 	st.success("分析が完了しました！")
 
 
 	output = io.BytesIO()
 	with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
-		df.to_excel(writer, index=False, sheet_name='Updated Data')
+		edited_data.to_excel(writer, index=False, sheet_name='Updated Data')
 
 	# ダウンロードするファイル名の設定
 	st.download_button(
