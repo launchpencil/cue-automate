@@ -3,18 +3,17 @@ import xml.etree.ElementTree as et
 import pandas as pd
 import io
 
-st.title('QUE sheet maker')
+st.title('QUEシート作成補助アプリ')
+st.caption("動画の編集データを分析し、CUEシートに貼り付けることのできる形式に変換します。")
 
-uploaded_file = st.file_uploader("Choose a file")
+
+uploaded_file = st.file_uploader("編集データを選択してください")
 
 data_list = []
-data_list2 = []
 
 if uploaded_file is not None:
-	st.info('file uploaded!')
+	st.info('分析を開始します')
 	tree = et.parse(uploaded_file).getroot()
-
-	tree[1][0][0][0][0]
 
     
 	for child in tree[1][0][0][0][0]:
@@ -32,19 +31,19 @@ if uploaded_file is not None:
 			status = 'unknown'
 		data_list.append({"分": time//60, "秒": time%60, "トラック名": status})
 
-df = pd.DataFrame(data_list)
-df
+	df = pd.DataFrame(data_list)
+	st.data_editor(df)
+	st.success("分析が完了しました！")
 
 
-output = io.BytesIO()
-with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
-    df.to_excel(writer, index=False, sheet_name='Updated Data')
+	output = io.BytesIO()
+	with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
+		df.to_excel(writer, index=False, sheet_name='Updated Data')
 
-# ダウンロードするファイル名の設定
-download_file_name = "QUEシート貼り付け用データ.xlsx"
-st.download_button(
-    label="データをダウンロード",
-    data=output.getvalue(),
-    file_name=download_file_name,
-    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-)
+	# ダウンロードするファイル名の設定
+	st.download_button(
+		label="データをダウンロード",
+		data=output.getvalue(),
+		file_name="QUEシート貼り付け用データ.xlsx",
+		mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+	)
