@@ -1,47 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2024-06-21T07:36:37.493Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15" etag="TZT_5zpbhYKjrlQ66sQe" version="24.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-27T07:27:29.283Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="bH7OxGs_fj-RphB6y7Uu" version="24.6.3" type="github">
   <diagram name="Page-1" id="EoyT6gYv0sLyLPtV19ZA">
-    <mxGraphModel dx="837" dy="827" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1146" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FMEWAEgyTm79VxKZXJZd-1" target="FMEWAEgyTm79VxKZXJZd-3" edge="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" parent="1" source="FMEWAEgyTm79VxKZXJZd-1" target="FMEWAEgyTm79VxKZXJZd-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-1" value="編集データの読み込み" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="25" y="-80" width="189" height="60" as="geometry" />
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-1" value="編集データの読み込み" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="25" y="-37" width="189" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FMEWAEgyTm79VxKZXJZd-3" target="FMEWAEgyTm79VxKZXJZd-4" edge="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" parent="1" source="FMEWAEgyTm79VxKZXJZd-3" target="FMEWAEgyTm79VxKZXJZd-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-3" value="時間とファイル名が&lt;div&gt;書かれた部分を取得&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-3" value="時間とファイル名が&lt;div style=&quot;font-size: 14px;&quot;&gt;書かれた部分を取得&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="30" y="79" width="179" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FMEWAEgyTm79VxKZXJZd-4" target="FMEWAEgyTm79VxKZXJZd-5" edge="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" parent="1" source="FMEWAEgyTm79VxKZXJZd-4" target="FMEWAEgyTm79VxKZXJZd-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-4" value="時間を変換" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-4" value="時間を変換" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="30" y="183" width="179" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="FMEWAEgyTm79VxKZXJZd-5" target="FMEWAEgyTm79VxKZXJZd-3" edge="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;" parent="1" source="FMEWAEgyTm79VxKZXJZd-5" target="FMEWAEgyTm79VxKZXJZd-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="236" y="258" as="sourcePoint" />
             <mxPoint x="325" y="67" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FMEWAEgyTm79VxKZXJZd-5" target="FMEWAEgyTm79VxKZXJZd-14" edge="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" parent="1" source="FMEWAEgyTm79VxKZXJZd-5" target="FMEWAEgyTm79VxKZXJZd-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-5" value="CUEシートに&lt;div&gt;貼り付けられる表示に&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-5" value="CUEシートに&lt;div style=&quot;font-size: 14px;&quot;&gt;貼り付けられる表示に&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="36" y="300" width="168" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-12" value="編集データの最後のカットまで繰り返し" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="233" y="252" width="127" height="48" as="geometry" />
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-12" value="編集データの&lt;div&gt;最後のカットまで繰り返し&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="233" y="252" width="201" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-14" value="完成したデータを&lt;div&gt;保存するボタンを設置&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-14" value="完成したデータを&lt;div style=&quot;font-size: 14px;&quot;&gt;保存するボタンを設置&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="36" y="461" width="169" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="FMEWAEgyTm79VxKZXJZd-16" value="全ての処理が完了後" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="131" y="400" width="123" height="30" as="geometry" />
+        <mxCell id="FMEWAEgyTm79VxKZXJZd-16" value="全ての処理が完了後" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="131" y="400" width="133" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
